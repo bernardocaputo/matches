@@ -10,6 +10,7 @@ defmodule Matches.Application do
     children = [
       # Starts a worker by calling: Matches.Worker.start_link(arg)
       # {Matches.Worker, arg}
+      Matches.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
