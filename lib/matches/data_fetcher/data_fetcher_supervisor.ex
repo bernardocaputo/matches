@@ -1,4 +1,7 @@
 defmodule Matches.DataFecherSupervisor do
+  @moduledoc """
+  Data fecher Supervisor
+  """
   use Supervisor
 
   def start_link(providers) do
