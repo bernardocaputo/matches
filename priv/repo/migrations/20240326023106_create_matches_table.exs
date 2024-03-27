@@ -6,9 +6,9 @@ defmodule Matches.Repo.Migrations.CreateMatchesTable do
 
       add :home_team, :string, null: false
       add :away_team, :string, null: false
-      add :kickoff_at, :integer, null: false
+      add :kickoff_at, :naive_datetime, null: false
       add :provider, :string, null: false
-      add :created_at, :naive_datetime, null: false
+      add :created_at, :integer, null: false
       timestamps()
     end
 
