@@ -7,6 +7,7 @@ defmodule Matches.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
+      aliases: aliases(),
       deps: deps()
     ]
   end
@@ -15,7 +16,12 @@ defmodule Matches.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Matches.Application, []}
+      mod:
+        {Matches.Application,
+         [
+           Matches.Providers.FastBall,
+           Matches.Providers.MatchBeam
+         ]}
     ]
   end
 
@@ -23,7 +29,16 @@ defmodule Matches.MixProject do
   defp deps do
     [
       {:ecto_sql, "~> 3.0"},
+      {:httpoison, "~> 2.2"},
+      {:jason, "~> 1.4"},
+      {:mox, "~> 1.0", only: :test},
       {:postgrex, ">= 0.0.0"}
+    ]
+  end
+
+  defp aliases() do
+    [
+      test: "test --no-start"
     ]
   end
 end
