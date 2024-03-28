@@ -1,4 +1,9 @@
+defmodule Matches.DataFetcher.HttpClientBehaviour do
+  @callback get(arg :: binary()) :: {:ok, [map()]} | {:error, atom()}
+end
+
 defmodule Matches.DataFecher.HttpClient do
+  @behaviour Matches.DataFetcher.HttpClientBehaviour
   require Logger
 
   @spec get(binary()) :: {:ok, [map()]} | {:error, atom()}

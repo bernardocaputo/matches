@@ -7,3 +7,5 @@ config :matches, Matches.Repo,
   hostname: "localhost"
 
 config :matches, ecto_repos: [Matches.Repo]
+
+import_config("#{Mix.env()}.exs")
