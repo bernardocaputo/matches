@@ -29,7 +29,7 @@ defmodule Matches.Providers.MatchBeam do
       created_at: created_at,
       inserted_at: now,
       updated_at: now,
-      provider: "match_beam"
+      provider: "matchbeam"
     }
   end
 

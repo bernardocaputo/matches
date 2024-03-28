@@ -47,7 +47,7 @@ defmodule Test.Providers.MatchBeamTest do
                  home_team: "Arsenal",
                  inserted_at: _,
                  created_at: 1_543_741_200,
-                 provider: "match_beam",
+                 provider: "matchbeam",
                  updated_at: _
                }
              ] =

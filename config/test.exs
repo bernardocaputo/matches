@@ -1,6 +1,7 @@
 import Config
 
 config :matches, Matches.Repo,
+  pool: Ecto.Adapters.SQL.Sandbox,
   database: "matches_dev",
   username: "postgres",
   password: "postgres",
