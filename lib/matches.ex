@@ -1,11 +1,10 @@
 defmodule Matches do
   alias Matches.MatchesSchema
 
-  @type provider :: atom()
   @moduledoc """
   Documentation for `Matches`.
   """
-  @spec process(provider()) :: :ok | {:error, atom()}
+  @spec process(module()) :: :ok | {:error, atom()}
   def process(provider) do
     with {:ok, data} <- provider.fetch_data(),
          prepared_data <- provider.prepare_data(data),

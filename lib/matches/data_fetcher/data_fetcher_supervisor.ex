@@ -1,6 +1,6 @@
 defmodule Matches.DataFecherSupervisor do
   @moduledoc """
-  Data fecher Supervisor
+  Data fecther Supervisor
   """
   use Supervisor
 

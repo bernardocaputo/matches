@@ -1,5 +1,5 @@
 defmodule Matches.Providers.FastBall do
-  @behaviour Matches.Providers.Behaviour
+  @behaviour Matches.Providers.ProviderBehaviour
 
   alias Matches.DataFecher.HttpClient
 
@@ -38,6 +38,6 @@ defmodule Matches.Providers.FastBall do
   end
 
   defp http_client() do
-    Application.get_env(:matches, :match_beam_provider, HttpClient)
+    Application.get_env(:matches, :http_client, HttpClient)
   end
 end

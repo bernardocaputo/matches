@@ -1,4 +1,4 @@
-defmodule Matches.Providers.Behaviour do
+defmodule Matches.Providers.ProviderBehaviour do
   alias Matches.MatchesSchema
 
   @callback fetch_data() :: {:ok, [map()]} | {:error, atom()}
