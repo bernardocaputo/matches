@@ -1,8 +1,12 @@
 defmodule Matches.DataFetcher.HttpClientBehaviour do
+  @moduledoc false
   @callback get(arg :: binary()) :: {:ok, [map()]} | {:error, atom()}
 end
 
 defmodule Matches.DataFecher.HttpClient do
+  @moduledoc """
+  Http Client module to request data from Providers
+  """
   @behaviour Matches.DataFetcher.HttpClientBehaviour
   require Logger
 

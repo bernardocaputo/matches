@@ -32,7 +32,8 @@ defmodule Matches.MixProject do
       {:httpoison, "~> 2.2"},
       {:jason, "~> 1.4"},
       {:mox, "~> 1.0", only: :test},
-      {:postgrex, ">= 0.0.0"}
+      {:postgrex, ">= 0.0.0"},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 

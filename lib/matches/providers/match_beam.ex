@@ -1,4 +1,8 @@
 defmodule Matches.Providers.MatchBeam do
+  @moduledoc """
+  Match Beam Provider Module
+  """
+
   @behaviour Matches.Providers.ProviderBehaviour
 
   alias Matches.DataFecher.HttpClient

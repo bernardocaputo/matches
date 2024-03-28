@@ -21,11 +21,11 @@ defmodule Matches.DataFecher do
   """
   def handle_info(:fetch_data, provider) do
     Matches.process(provider)
-    Process.send_after(self(), :fetch_data, 30000)
+    Process.send_after(self(), :fetch_data, 30_000)
     {:noreply, provider}
   end
 
   defp sleep() do
-    Application.get_env(:matches, :sleep, 15000)
+    Application.get_env(:matches, :sleep, 15_000)
   end
 end

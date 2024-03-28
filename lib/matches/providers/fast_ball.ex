@@ -1,4 +1,8 @@
 defmodule Matches.Providers.FastBall do
+  @moduledoc """
+  Fast Ball Provider Module
+  """
+
   @behaviour Matches.Providers.ProviderBehaviour
 
   alias Matches.DataFecher.HttpClient
