@@ -36,7 +36,7 @@ overthinking.
 ## Installation
 Clone the repository:
 ```
-git clione git@github.com:bernardocaputo/matches.git
+git clone git@github.com:bernardocaputo/matches.git
 ```
 
 Install dependencies:
