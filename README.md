@@ -23,7 +23,7 @@ This project is designed to fetch data from a provider, process it into a unique
                  /        \
                 /          \
                /            \
-         Data Fecher     Data Fetcher
+         Data Fetcher     Data Fetcher
          (FastBall)       (MatchBeam)
    
 
